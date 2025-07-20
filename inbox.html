@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Retiro Peregrinos de Esperanza</title>
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family: Arial, sans-serif; background: #f5efe2; color: #5a3d2e; }
+    a { text-decoration: none; color: inherit; }
+    .container { max-width: 1000px; margin: auto; padding: 20px; }
+    header { text-align: center; position: relative; }
+    header img { width:100%; height:auto; border-radius:8px; }
+    header h1 {
+      position:absolute; top:20px; left:20px;
+      font-size:2rem; color:white;
+      text-shadow:2px 2px 6px rgba(0,0,0,0.7);
+    }
+    main { background:rgba(255,255,255,0.9); margin-top:-40px; padding:20px; border-radius:8px; }
+    .info-grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+    .info-box h2 { margin-bottom:10px; font-size:1.2rem; color:#7a532a; }
+    .info-box p { margin-bottom:6px; }
+    .price { font-size:1.5rem; font-weight:bold; margin-top:10px; }
+    .cta { text-align:center; margin:30px 0; }
+    .btn-registro {
+      background:#e85c57; color:white; padding:15px 30px;
+      font-size:1.2rem; border-radius:50px; transition:background-color .3s;
+    }
+    .btn-registro:hover { background:#c04848; }
+    .zelle-section {
+      background:#fff; padding:30px 20px;
+      border-radius:8px; text-align:center; margin-top:40px;
+      border:2px solid #ddd;
+    }
+    .zelle-section h2 { font-size:1.8rem; color:#4a2f57; margin-bottom:10px; }
+    .zelle-section p { font-size:1rem; color:#333; margin:8px 0; }
+    .zelle-qr { max-width:300px; width:80%; height:auto; margin:20px 0; border:1px solid #ccc; border-radius:4px; }
+    footer { text-align:center; margin-top:40px; font-size:0.9rem; color:#7a532a; }
+    @media(max-width:768px) {
+      .info-grid { grid-template-columns:1fr; }
+      header h1 { font-size:1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="imagen-banner.jpg" alt="Retiro Peregrinos de Esperanza">
+    </header>
+
+    <main>
+      <br/><br/><br/>
+      <div class="info-grid">
+        <div class="info-box">
+          <h2>📅 Fecha</h2>
+          <p><strong>Sábado, 2 de agosto</strong></p>
+          <h2>⏰ Hora</h2>
+          <p>8:00 am – 3:00 pm</p>
+          <h2>📍 Lugar</h2>
+          <p>370 SW 3 St, Boca Raton, FL 33432 (Mercy Center)</p>
+        </div>
+
+        <div class="info-box">
+          <h2>💲 Pre-Venta</h2>
+          <p class="price">$35</p>
+          <p>Hasta el 30 de Julio</p>
+          <h2>🎟️ Precio Día del Evento</h2>
+          <p class="price">$40</p>
+          <p>Pro-Fondos Retiro Emaús</p>
+          <p>Incluye almuerzo y refrigerio</p>
+        </div>
+      </div>
+
+      <!-- SECCIÓN DE ZELLE -->
+      <section class="zelle-section">
+        <h2>Paga por Zelle</h2>
+        <p>Escanea el código QR para hacer tu pago de forma rápida y segura:</p>
+        <img src="tu-zelle-qr.png" alt="Código QR para pago por Zelle" class="zelle-qr">
+        <p><strong>Nombre del destinatario:</strong> Javier Lozano</p>
+        <p><strong>Email / Teléfono:</strong> javierlozp@gmail.com / (561) 528‑9627</p>
+      </section>
+
+      <div class="cta">
+        <a class="btn-registro" href="https://www.eventbrite.com/e/retiro-peregrinos-de-esperanza-tickets-1507895087799?aff=oddtdtcreator" target="_blank">
+          ¡Regístrate Aquí!
+        </a>
+      </div>
+
+      
+    </main>
+
+    <footer>
+      Vive una experiencia que encienda tu fe y renueve tu espíritu. ¡Te esperamos con los brazos abiertos!
+    </footer>
+  </div>
+</body>
+</html>
